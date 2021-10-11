@@ -1,0 +1,52 @@
+
+ 
+<body>
+    <h1> <button (click)="resetear()" > <strong><</strong> </button> {{ titulo }}  {{ round }}  <button (click)="sumarRound( 1 )" > <strong>></strong> </button> </h1>
+
+<div class="general">
+    <div class="energia">
+        <h3>ENERGIA:  {{ numero }} </h3>
+
+        <div class="uno">
+            <button (click)="sumarRestar( 1 )"> <h2 class="numeros"> + {{ 1 }} </h2></button>
+
+            <button (click)="sumarRestar( -1 )"> <h2>- {{ 1 }}</h2></button>
+        </div>    
+
+        <div class="dos">
+            <button (click)="sumarRestar( 2 )"> <h2>+ {{ 2 }}</h2></button>
+
+            <button (click)="sumarRestar( -2 )"> <h2>- {{ 2 }}</h2></button>
+        </div>    
+
+        <div class="tres">
+            <button (click)="sumarRestar( 3 )"> <h2>+ {{ 3 }}</h2></button>
+
+            <button (click)="sumarRestar( -3 )"> <h2>- {{ 3 }}</h2></button>
+        </div>    
+    </div>
+
+    
+    <div class="cartas">
+        <h3>CARTAS:  {{ cartas }} </h3>
+
+            <button (click)="sumarRestarCartas( -1 )"> <h2>- {{ 1 }}</h2></button>
+
+            <button (click)="sumarRestarCartas( -2 )"> <h2>- {{ 2 }}</h2></button>
+
+            <button (click)="sumarRestarCartas( -3 )"> <h2>- {{ 3 }}</h2></button>
+    </div>
+</div>
+
+<div class="combinaciones">
+    <img src="../../../assets/combinaciones.png">
+</div>
+
+</body>
+
+<header>
+    
+</header>
+
+
+        
